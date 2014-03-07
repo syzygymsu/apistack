@@ -1,0 +1,22 @@
+{
+	"name": "syzygy/api-stack",
+	"version": "1.0.0",
+	"minimum-stability": "stable",
+	"authors": [
+		{
+			"name": "Anton A. Sumin",
+			"email": "syzygymsu@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.0.0"
+	},
+	"suggest": {
+		"symfony/symfony": "Able to handle Symfony2 Request object"
+	},
+	"autoload": {
+		"psr-0": {
+			"Syzygy\\ApiStack\\": "src/"
+		}
+	}
+}
