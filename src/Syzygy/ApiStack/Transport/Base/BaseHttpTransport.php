@@ -20,7 +20,7 @@ abstract class BaseHttpTransport extends StringProtocolAwareTransport {
 				case 0:
 					throw new \Exception('Argument should contain one or more elements');
 				case 1:
-					if(self::SOURCE_BODY !== $argument) {
+					if(self::SOURCE_BODY !== reset($argument)) {
 						throw new \Exception('Arguments other than BODY should contain list of names');
 					}
 					break;
