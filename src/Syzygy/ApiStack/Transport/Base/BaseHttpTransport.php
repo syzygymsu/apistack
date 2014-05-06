@@ -53,7 +53,7 @@ abstract class BaseHttpTransport extends StringProtocolAwareTransport {
 							}
 							break;
 						default:
-							throw new \Exception(sprintf('Type %s cannot have parameters'), $type);
+							throw new \Exception(sprintf('Type %s cannot have parameters', $type));
 					}
 				}
 			}
